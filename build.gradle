@@ -1,0 +1,16 @@
+apply plugin: 'war'
+
+group = 'org.superbiz'
+version = '1.0-SNAPSHOT'
+description = 'My Java EE Project'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	providedCompile group: 'javax', name: 'javaee-api', version: '7.0'
+}
